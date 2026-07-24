@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bonas Medicals is a premier orthopedic specialty center providing advanced joint replacement, spine surgery, sports medicine, and trauma care.">
+    <meta name="keywords" content="Orthopedic Hospital, Joint Replacement, Spine Surgery, Sports Medicine, Bonas Medicals, Emergency Trauma Care">
+    <title>Bonas Medicals | Center for Advanced Orthopedic Care</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Top Emergency & Utility Bar -->
+<div class="top-utility-bar">
+    <div class="container top-utility-inner">
+        <div class="top-contact-info">
+            <span class="emergency-tag">
+                <i class="fa-solid fa-truck-medical"></i> 24/7 Trauma Hotline:
+            </span>
+            <a href="tel:+254700000999" class="phone-link"><strong>+254 700 000 999</strong></a>
+            <span class="divider">|</span>
+            <a href="mailto:care@bonasmedicals.org"><i class="fa-regular fa-envelope"></i> care@bonasmedicals.org</a>
+        </div>
+        <div class="top-right-links">
+            <span><i class="fa-regular fa-clock"></i> OPD: Mon - Sat (8:00 AM - 8:00 PM)</span>
+            <a href="#" class="patient-portal-btn"><i class="fa-solid fa-user-lock"></i> Patient Portal</a>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar Header -->
+<header class="main-navbar">
+    <div class="container navbar-inner">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+                <i class="fa-solid fa-bone"></i>
+            </div>
+            <div class="brand-text">
+                <h1>BONAS <span>Medicals</span></h1>
+                <span>Orthopedic & Spine Care</span>
+            </div>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="services.html" class="nav-link">Specialties & Procedures</a>
+            <a href="doctors.html" class="nav-link">Our Surgeons</a>
+            <a href="appointment.html" class="nav-link">Book Visit</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+
+        <!-- Navbar Action Buttons -->
+        <div class="nav-actions">
+            <a href="tel:+254700000999" class="btn btn-emergency"><i class="fa-solid fa-phone"></i> Emergency 24/7</a>
+            <button class="btn btn-primary open-appointment-modal"><i class="fa-regular fa-calendar-check"></i> Book Appointment</button>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section with Background Banner Image -->
+<section class="hero-section">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <span class="badge-pill" style="background:rgba(0, 168, 150, 0.2); color:#52b788;"><i class="fa-solid fa-award"></i> Premier Orthopedic Specialty Center</span>
+            <h1>Restoring Mobility, <span>Transforming Lives.</span></h1>
+            <p>Bonas Medicals is a leading orthopedic sub-specialty hospital dedicated to total joint replacements, minimally invasive spine surgery, sports injury rehabilitation, and 24-hour trauma emergency care.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary open-appointment-modal"><i class="fa-regular fa-calendar-check"></i> Book Consultation</button>
+                <a href="services.html" class="btn btn-outline-light"><i class="fa-solid fa-stethoscope"></i> Explore Clinical Specialties</a>
+            </div>
+        </div>
+
+        <div class="hero-doctor-card">
+            <div class="hero-doctor-img">
+                <img src="assets/images/hero-doctor.jpg" alt="Orthopedic Consultation">
+                <span class="hero-doctor-badge">Expert Care</span>
+            </div>
+            <div class="hero-doctor-body">
+                <h3>Sub-Specialized Orthopedic Faculty</h3>
+                <p>Our fellowship-trained surgeons utilize cutting-edge robotic alignment and tissue-preserving surgical techniques for faster patient recovery.</p>
+                <div style="display:flex; justify-space-between; align-items:center; border-top:1px solid var(--border-color); padding-top:1rem;">
+                    <div>
+                        <strong style="color:var(--primary-navy); font-size:1.1rem;">24/7 Trauma Unit</strong>
+                        <div style="font-size:0.85rem; color:var(--text-muted);">Direct Ambulance Dispatch</div>
+                    </div>
+                    <a href="tel:+254700000999" class="btn btn-emergency" style="padding:0.5rem 1rem; font-size:0.85rem;"><i class="fa-solid fa-phone"></i> Call Emergency</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Floating Quick Action Strip -->
+<div class="container">
+    <div class="quick-action-strip">
+        <div class="quick-action-grid">
+            <a href="doctors.html" class="quick-item">
+                <div class="quick-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <div class="quick-content">
+                    <h4>Find a Specialist</h4>
+                    <p>Search orthopedic surgeons & clinics</p>
+                </div>
+            </a>
+            <div class="quick-item open-appointment-modal" style="cursor:pointer;">
+                <div class="quick-icon" style="background:var(--teal-accent);"><i class="fa-regular fa-calendar-check"></i></div>
+                <div class="quick-content">
+                    <h4>Book Visit Online</h4>
+                    <p>Instant consultation slot reservation</p>
+                </div>
+            </div>
+            <a href="tel:+254700000999" class="quick-item" style="border-color:rgba(230, 57, 70, 0.3);">
+                <div class="quick-icon" style="background:var(--emergency-red);"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="quick-content">
+                    <h4 style="color:var(--emergency-red);">24/7 Fracture Emergency</h4>
+                    <p style="font-weight:600; color:var(--text-dark);">Hotline: +254 700 000 999</p>
+                </div>
+            </a>
+            <a href="services.html#rehab" class="quick-item">
+                <div class="quick-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                <div class="quick-content">
+                    <h4>Physical Therapy</h4>
+                    <p>Personalized joint & post-op rehab</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Key Hospital Statistics -->
+<section class="section-padding">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">15,000+</div>
+                <div class="stat-label">Successful Joint Replacements</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Orthopedic Specialists & Faculty</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">99.2%</div>
+                <div class="stat-label">Patient Satisfaction Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24 / 7</div>
+                <div class="stat-label">Emergency & Ambulance Coverage</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clinical Centers of Excellence Grid -->
+<section class="section-padding" style="background:#ffffff;">
+    <div class="container">
+        <div class="text-center">
+            <span class="badge-pill">Clinical Centers of Excellence</span>
+            <h2 class="section-title">Specialized Orthopedic Services</h2>
+            <p class="section-subtitle">We treat complex musculoskeletal conditions using evidence-based surgical techniques and advanced rehabilitation protocols.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/images/joint-replacement.jpg" alt="Total Joint Replacement">
+                    <div class="service-icon-floating"><i class="fa-solid fa-bone"></i></div>
+                </div>
+                <div class="service-body">
+                    <h3 class="service-title">Total Joint Replacement</h3>
+                    <p class="service-desc">Computer-assisted primary & revision knee and hip replacements engineered to eliminate joint pain and restore long-term mobility.</p>
+                    <a href="services.html#joint" class="service-link">Read Procedure Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/images/spine-surgery.jpg" alt="Spine Care & Surgery">
+                    <div class="service-icon-floating"><i class="fa-solid fa-align-center"></i></div>
+                </div>
+                <div class="service-body">
+                    <h3 class="service-title">Spine Care & Deformity Surgery</h3>
+                    <p class="service-desc">Minimally invasive keyhole procedures and microdiscectomy for herniated discs, spinal stenosis, scoliosis, and back pain.</p>
+                    <a href="services.html#spine" class="service-link">Read Procedure Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/images/sports-medicine.jpg" alt="Sports Medicine">
+                    <div class="service-icon-floating"><i class="fa-solid fa-person-running"></i></div>
+                </div>
+                <div class="service-body">
+                    <h3 class="service-title">Sports Medicine & Arthroscopy</h3>
+                    <p class="service-desc">Keyhole reconstruction for ACL/MCL ligament tears, rotator cuff tears, meniscus repairs, and accelerated athlete rehabilitation.</p>
+                    <a href="services.html#sports" class="service-link">Read Procedure Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Surgeons Directory Preview -->
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center">
+            <span class="badge-pill">World-Class Faculty</span>
+            <h2 class="section-title">Meet Our Lead Orthopedic Specialists</h2>
+            <p class="section-subtitle">Board-certified fellowship surgeons dedicated to individual patient care and optimal surgical outcomes.</p>
+        </div>
+
+        <div class="doctors-grid">
+            <div class="doctor-card">
+                <div class="doctor-photo">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80" alt="Dr. Bonaventure">
+                </div>
+                <div class="doctor-info">
+                    <div class="doctor-specialty">Chief Joint Replacement Specialist</div>
+                    <h3 class="doctor-name">Dr. Bonaventure K.</h3>
+                    <p class="doctor-meta">MBChB, MMed Ortho (UK) • 18+ Yrs Exp</p>
+                    <button class="btn btn-outline-light open-appointment-modal" style="width:100%; color:var(--teal-accent); border-color:var(--teal-accent);"><i class="fa-regular fa-calendar"></i> Book Visit</button>
+                </div>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-photo">
+                    <img src="https://images.unsplash.com/photo-1594824813566-888557790665?auto=format&fit=crop&w=500&q=80" alt="Dr. Sarah Jenkins">
+                </div>
+                <div class="doctor-info">
+                    <div class="doctor-specialty">Spine & Scoliosis Specialist</div>
+                    <h3 class="doctor-name">Dr. Sarah Jenkins</h3>
+                    <p class="doctor-meta">MD, Fellowship Spinal Surgery • 14+ Yrs Exp</p>
+                    <button class="btn btn-outline-light open-appointment-modal" style="width:100%; color:var(--teal-accent); border-color:var(--teal-accent);"><i class="fa-regular fa-calendar"></i> Book Visit</button>
+                </div>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-photo">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=80" alt="Dr. Michael Owino">
+                </div>
+                <div class="doctor-info">
+                    <div class="doctor-specialty">Sports Medicine & Arthroscopy</div>
+                    <h3 class="doctor-name">Dr. Michael Owino</h3>
+                    <p class="doctor-meta">MBChB, Dip Sports Med • 12+ Yrs Exp</p>
+                    <button class="btn btn-outline-light open-appointment-modal" style="width:100%; color:var(--teal-accent); border-color:var(--teal-accent);"><i class="fa-regular fa-calendar"></i> Book Visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="doctors.html" class="btn btn-navy"><i class="fa-solid fa-user-group"></i> View All Surgeons & Specialty Clinics</a>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Banner -->
+<section class="container" style="margin-bottom: 5rem;">
+    <div class="emergency-banner">
+        <div class="emergency-banner-text">
+            <h3><i class="fa-solid fa-truck-medical"></i> Need Immediate Trauma Assistance?</h3>
+            <p>Our 24-Hour Emergency & Accident Center is fully equipped for immediate musculoskeletal trauma care.</p>
+        </div>
+        <div>
+            <a href="tel:+254700000999" class="btn btn-navy" style="background:#ffffff; color:var(--emergency-red); font-size:1.1rem;">
+                <i class="fa-solid fa-phone-volume"></i> Call Hotline: +254 700 000 999
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Main Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1 style="color:#fff;">BONAS <span style="color:var(--teal-accent);">Medicals</span></h1>
+                        <span style="color:#a0aec0;">Orthopedic Hospital</span>
+                    </div>
+                </a>
+                <p>Bonas Medicals is a center of excellence in joint reconstruction, spine rehabilitation, sports trauma, and emergency musculoskeletal care.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Orthopedic Services</a></li>
+                    <li><a href="doctors.html"><i class="fa-solid fa-angle-right"></i> Find a Surgeon</a></li>
+                    <li><a href="appointment.html"><i class="fa-solid fa-angle-right"></i> Book Appointment</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Emergency Contacts</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Specialty Care</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#joint"><i class="fa-solid fa-angle-right"></i> Total Knee & Hip Replacement</a></li>
+                    <li><a href="services.html#spine"><i class="fa-solid fa-angle-right"></i> Minimal Access Spine Surgery</a></li>
+                    <li><a href="services.html#sports"><i class="fa-solid fa-angle-right"></i> Arthroscopic Knee/Shoulder Repair</a></li>
+                    <li><a href="services.html#trauma"><i class="fa-solid fa-angle-right"></i> Complex Fracture & Trauma Care</a></li>
+                    <li><a href="services.html#rehab"><i class="fa-solid fa-angle-right"></i> Physical Therapy & Rehab</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Hospital Location</h4>
+                <p style="margin-bottom: 0.8rem;"><i class="fa-solid fa-location-dot text-teal"></i> Hospital Road, Upper Hill, Nairobi</p>
+                <p style="margin-bottom: 0.8rem;"><i class="fa-solid fa-phone text-teal"></i> Emergency 24/7: +254 700 000 999</p>
+                <p style="margin-bottom: 0.8rem;"><i class="fa-solid fa-envelope text-teal"></i> info@bonasmedicals.org</p>
+                <p><i class="fa-regular fa-clock text-teal"></i> 24-Hour Emergency & Ambulance Service</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bonas Medicals. All Rights Reserved. GitHub Pages static release.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Quick Appointment Pop-Up Modal -->
+<div class="modal-backdrop" id="appointmentModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h3><i class="fa-regular fa-calendar-check text-teal"></i> Fast Appointment Booking</h3>
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form onsubmit="alert('Thank you! Your appointment request has been received. Our clinic desk will call you shortly.'); return false;">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="modal_patient_name">Full Name *</label>
+                        <input type="text" id="modal_patient_name" class="form-control" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="modal_phone">Phone Number *</label>
+                        <input type="tel" id="modal_phone" class="form-control" placeholder="+254 7XX XXX XXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="modal_specialty">Select Orthopedic Specialty *</label>
+                        <select id="modal_specialty" class="form-control" required>
+                            <option value="">-- Choose Speciality --</option>
+                            <option value="Joint Replacement">Total Joint Replacement (Knee / Hip)</option>
+                            <option value="Spine Surgery">Spine & Scoliosis Surgery</option>
+                            <option value="Sports Medicine">Sports Medicine & Arthroscopy</option>
+                            <option value="Trauma Care">Fracture & Trauma Surgery</option>
+                            <option value="Pediatric Orthopedics">Pediatric Orthopedics</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="modal_date">Preferred Date *</label>
+                        <input type="date" id="modal_date" class="form-control" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="form-label" for="modal_notes">Brief Medical Symptoms or Notes</label>
+                        <textarea id="modal_notes" class="form-control" placeholder="Describe joint pain, injury duration, or past diagnostic results..."></textarea>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; text-align: right;">
+                    <button type="button" class="btn btn-outline-light modal-close" style="color:var(--text-dark); border-color:var(--border-color);">Cancel</button>
+                    <button type="submit" class="btn btn-primary"><i class="fa-paper-plane"></i> Submit Reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
